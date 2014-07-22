@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02B81805-E3FD-48A4-AF86-868390EDF914}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pulsar</RootNamespace>
+    <AssemblyName>Pulsar.Bricks</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Pulsar.Atoms">
+      <HintPath>..\Debug\Pulsar.Atoms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GOL\GlobalObject.cs" />
+    <Compile Include="GOL\GOL.cs" />
+    <Compile Include="GOL\Interfaces.cs" />
+    <Compile Include="IServant.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="MessageBus\Message.cs" />
+    <Compile Include="MessageBus\MessageBus.cs" />
+    <Compile Include="MessageBus\MessageHandlerCallContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PulsarProperty\IPulsarPropertiesValuesContainer.cs" />
+    <Compile Include="PulsarProperty\PropertiesFilter.cs" />
+    <Compile Include="PulsarProperty\PropertySet.cs" />
+    <Compile Include="PulsarProperty\PropsValuesGroup.cs" />
+    <Compile Include="PulsarProperty\PulsarPropertiesValuesCollection.cs" />
+    <Compile Include="PulsarProperty\PulsarProperty.cs" />
+    <Compile Include="PulsarProperty\PulsarPropertyCategory.cs" />
+    <Compile Include="PulsarProperty\PulsarPropertyOptions.cs" />
+    <Compile Include="PulsarProperty\PulsarPropertyType.cs" />
+    <Compile Include="PulsarProperty\PulsarPropertyValue.cs" />
+    <Compile Include="Query\ClientType.cs" />
+    <Compile Include="Query\Context.cs" />
+    <Compile Include="Query\PulsarAnswer.cs" />
+    <Compile Include="Query\PulsarQuery.cs" />
+    <Compile Include="Query\PulsarQueryParams.cs" />
+    <Compile Include="Query\QueryType.cs" />
+    <Compile Include="ResManager\ImageCluster.cs" />
+    <Compile Include="ResManager\PulsarResource.cs" />
+    <Compile Include="ResManager\PulsarResourceContentType.cs" />
+    <Compile Include="ResManager\PulsarResourceTree.cs" />
+    <Compile Include="ResManager\PulsarResourceType.cs" />
+    <Compile Include="Scheduler\Scheduler.cs" />
+    <Compile Include="Scheduler\SchedulerTask.cs" />
+    <Compile Include="Scheduler\SchedulerTaskAction.cs" />
+    <Compile Include="Serialization\Attributes.cs" />
+    <Compile Include="Serialization\BufferedNetworkStream.cs" />
+    <Compile Include="Serialization\Classes.cs" />
+    <Compile Include="Serialization\DebugStream.cs" />
+    <Compile Include="Serialization\NoThrowDictionary.cs" />
+    <Compile Include="Serialization\Primitives.cs" />
+    <Compile Include="Serialization\PulsarCodeTransfer.cs" />
+    <Compile Include="Serialization\PulsarSerializationMode.cs" />
+    <Compile Include="Serialization\PulsarSerializationParams.cs" />
+    <Compile Include="Serialization\PulsarSerializer.cs" />
+    <Compile Include="Serialization\PulsarSerializer_Deser.cs" />
+    <Compile Include="Serialization\PulsarSerializer_Ser.cs" />
+    <Compile Include="Serialization\Reflection\FieldWrap.cs" />
+    <Compile Include="Serialization\Reflection\TypeSerializationWrap.cs" />
+    <Compile Include="GOL\TransBox.cs" />
+    <Compile Include="ServerParamsBase.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

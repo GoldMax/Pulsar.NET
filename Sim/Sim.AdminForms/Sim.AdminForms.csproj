@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC436DB1-F3FC-41E5-9AE5-7242B898CF6E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sim.AdminForms</RootNamespace>
+    <AssemblyName>Sim.AdminForms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Pulsar.Atoms">
+      <HintPath>..\..\Pulsar\Debug\Pulsar.Atoms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Pulsar.Bricks">
+      <HintPath>..\..\Pulsar\Debug\Pulsar.Bricks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Pulsar.Clients">
+      <HintPath>..\..\Pulsar\Debug\Pulsar.Clients.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Pulsar.Server">
+      <HintPath>..\..\Pulsar\Debug\Pulsar.Server.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sim.Common">
+      <HintPath>..\Debug\Sim.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sim.Controls">
+      <HintPath>..\Debug\Sim.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sim.Shell">
+      <HintPath>..\Debug\Sim.Shell.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CtrlCodeEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlCodeEditor.Designer.cs">
+      <DependentUpon>CtrlCodeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlCreateObject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlCreateObject.Designer.cs">
+      <DependentUpon>CtrlCreateObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlSelectTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlSelectTypes.Designer.cs">
+      <DependentUpon>CtrlSelectTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsole.Designer.cs">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersons.Designer.cs">
+      <DependentUpon>FormPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSecurityGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSecurityGroups.designer.cs">
+      <DependentUpon>FormSecurityGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetAccesses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetAccesses.designer.cs">
+      <DependentUpon>FormSetAccesses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Medium.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addChildGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddItem.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addUserToGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Array.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow_Gray.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowDown.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Code.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapce_Normal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapce_Pushed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Collapce_Raised.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Compile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_big.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doc_Full.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocSearch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocWork.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DropDownArrow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand_Normal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand_Pushed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expand_Raised.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Field_Private.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flush.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderAdd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderClosed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderOpen.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FromGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroupBig.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keys.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewDoc.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewTreeItem.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Object.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Object_Add.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Object_New.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Point_2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Point_2x7.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Point_Shadow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Property.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RemoveChildGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeUserFromGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rename.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resource1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resource1_Big.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResourceAdd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Run.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Run2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SystemGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UnknownGroup.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserAdd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WordWrap.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xbutton_Normal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CtrlCodeEditor.resx">
+      <DependentUpon>CtrlCodeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlCreateObject.resx">
+      <DependentUpon>CtrlCreateObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlSelectTypes.resx">
+      <DependentUpon>CtrlSelectTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsole.resx">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersons.resx">
+      <DependentUpon>FormPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSecurityGroups.resx">
+      <DependentUpon>FormSecurityGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetAccesses.resx">
+      <DependentUpon>FormSetAccesses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

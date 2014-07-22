@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_Project">
+      <UniqueIdentifier>{229502aa-e583-4342-a251-ebcce52080bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>_Project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>_Project</Filter>
+    </ClCompile>
+    <ClCompile Include="PulsarConsole.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PulsarConsole.exe.config" />
+  </ItemGroup>
+</Project>

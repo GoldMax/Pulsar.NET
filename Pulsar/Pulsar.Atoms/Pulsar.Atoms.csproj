@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A205AC0-5E10-4F5E-B3EA-80C69B3AC8E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pulsar</RootNamespace>
+    <AssemblyName>Pulsar.Atoms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Binders\DictionaryBinder.cs" />
+    <Compile Include="Binders\ObjectBinder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Lists\HashList.cs" />
+    <Compile Include="Primitives\Amount.cs" />
+    <Compile Include="Primitives\Money.cs" />
+    <Compile Include="Dics\HashIndex.cs" />
+    <Compile Include="Dics\HashIndexNotify.cs" />
+    <Compile Include="Dics\ParamsDic.cs" />
+    <Compile Include="Dics\PDictionary.cs" />
+    <Compile Include="Enums\Sex.cs" />
+    <Compile Include="Events\CollectionChangeNotify.cs" />
+    <Compile Include="Events\EventHandlersAndArgs.cs" />
+    <Compile Include="Events\ObjectChangeNotify.cs" />
+    <Compile Include="Events\WeakEvent.cs" />
+    <Compile Include="Exceptions\PulsarErrorException.cs" />
+    <Compile Include="Exceptions\PulsarException.cs" />
+    <Compile Include="Exceptions\PulsarServerException.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Graphs\Graph.cs" />
+    <Compile Include="Graphs\GraphItem.cs" />
+    <Compile Include="Graphs\KeyedTree.cs" />
+    <Compile Include="Graphs\Tree.cs" />
+    <Compile Include="Graphs\TreeItem.cs" />
+    <Compile Include="Interfaces\ILocker.cs" />
+    <Compile Include="Interfaces\Interfaces.cs" />
+    <Compile Include="Interfaces\IReadWriteLockObject.cs" />
+    <Compile Include="Lists\ElasticArray.cs" />
+    <Compile Include="Lists\IndexedList.cs" />
+    <Compile Include="Lists\KeyedList.cs" />
+    <Compile Include="Lists\KeyedValue.cs" />
+    <Compile Include="Binders\ListBinder.cs" />
+    <Compile Include="Lists\PList.cs" />
+    <Compile Include="Lists\PulsarCluster.cs" />
+    <Compile Include="Lists\PulsarQueue.cs" />
+    <Compile Include="Primitives\OID.cs" />
+    <Compile Include="Primitives\RefString.cs" />
+    <Compile Include="Primitives\UInt.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\ActionPropertyDescriptor.cs" />
+    <Compile Include="Reflection\ActionTypeDescriptionProvider.cs" />
+    <Compile Include="Reflection\BooleanTypeConverter.cs" />
+    <Compile Include="Reflection\DisplayAttributes.cs" />
+    <Compile Include="Reflection\DynamicInvokeObject.cs" />
+    <Compile Include="Reflection\ReflectionHelper.cs" />
+    <Compile Include="Reflection\EnumTypeConverter.cs" />
+    <Compile Include="Reflection\PrimitiveValuePropertyDescriptor.cs" />
+    <Compile Include="Reflection\PropertyInfoDescriptor.cs" />
+    <Compile Include="Serialization\ISelfSerialization.cs" />
+    <Compile Include="SQL\EnumeratorDataReader.cs" />
+    <Compile Include="SQL\PulsarSqlReader.cs" />
+    <Compile Include="SQL\SqlStrings.cs" />
+    <Compile Include="SQL\SqlTimeStamp.cs" />
+    <Compile Include="Tools\BitEditor.cs" />
+    <Compile Include="Tools\Locker.cs" />
+    <Compile Include="Tools\PulsarThreadPool.cs" />
+    <Compile Include="Tools\ValuesPair.cs" />
+    <Compile Include="Tools\ValuesTrio.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

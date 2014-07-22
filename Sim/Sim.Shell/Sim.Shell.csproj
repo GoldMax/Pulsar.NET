@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87C3444A-3A23-4511-828F-56103FAC47B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sim.Shell</RootNamespace>
+    <AssemblyName>Sim.Shell</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Pulsar.Atoms">
+      <HintPath>..\..\Pulsar\Debug\Pulsar.Atoms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Pulsar.Bricks">
+      <HintPath>..\..\Pulsar\Debug\Pulsar.Bricks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Pulsar.Clients">
+      <HintPath>..\..\Pulsar\Debug\Pulsar.Clients.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sim.Controls">
+      <HintPath>..\Sim\Debug\Sim.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AuthForm.designer.cs">
+      <DependentUpon>AuthForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConParamsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConParamsForm.designer.cs">
+      <DependentUpon>ConParamsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CtrlAssistInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlAssistInfo.Designer.cs">
+      <DependentUpon>CtrlAssistInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Navigator.Designer.cs">
+      <DependentUpon>Navigator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetProgressControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NetProgressControl.designer.cs">
+      <DependentUpon>NetProgressControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TabViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow_Gray.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CompServerExchange.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConString.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AuthForm.resx">
+      <DependentUpon>AuthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientBaseForm.resx">
+      <DependentUpon>ClientBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConParamsForm.resx">
+      <DependentUpon>ConParamsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlAssistInfo.resx">
+      <DependentUpon>CtrlAssistInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Navigator.resx">
+      <DependentUpon>Navigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetProgressControl.resx">
+      <DependentUpon>NetProgressControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Finist3.ico" />
+    <EmbeddedResource Include="TabViewer.resx">
+      <DependentUpon>TabViewer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FolderOpen.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\History.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Point.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Point_Shadow.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Status_Red.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusOff.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusOn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TabView.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileWindowsCascade.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileWindowsHorizontally.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileWindowsVertically.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UsersAuth.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowsView.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xbutton.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xbutton_Pushed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xbutton_Raised.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Woman48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Woman48_Over.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Woman48_Pushed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Woman48Msg.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Woman48Msg_Over.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Woman48Msg_Pushed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man48_Over.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man48_Pushed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man48Msg.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man48Msg_Over.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Man48Msg_Pushed.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sim.Common\Sim.Common.csproj">
+      <Project>{264AB670-38CD-43CD-8530-585C4530094A}</Project>
+      <Name>Sim.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

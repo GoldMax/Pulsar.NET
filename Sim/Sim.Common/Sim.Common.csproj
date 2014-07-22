@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{264AB670-38CD-43CD-8530-585C4530094A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sim.Common</RootNamespace>
+    <AssemblyName>Sim.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Pulsar.Atoms">
+      <HintPath>..\..\Pulsar\Debug\Pulsar.Atoms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Pulsar.Bricks">
+      <HintPath>..\..\Pulsar\Debug\Pulsar.Bricks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Pulsar.Clients">
+      <HintPath>..\..\Pulsar\Debug\Pulsar.Clients.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sim.Controls">
+      <HintPath>..\..\Sim\Debug\Sim.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ImportExport\CtrlClipboardImport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ImportExport\CtrlClipboardImport.Designer.cs">
+      <DependentUpon>CtrlClipboardImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SimCaption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SimCaption.Designer.cs">
+      <DependentUpon>SimCaption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SimGroupBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SimGroupBox.Designer.cs">
+      <DependentUpon>SimGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SimProgress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SimProgress.Designer.cs">
+      <DependentUpon>SimProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CtrlViewDocHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\CtrlViewDocLinesDic.cs" />
+    <Compile Include="Views\CtrlViewDocLinesList.cs" />
+    <Compile Include="Views\CtrlViewParts.cs" />
+    <Compile Include="Views\CtrlViewSlot.cs" />
+    <Compile Include="Views\CtrlViewSlot.Designer.cs">
+      <DependentUpon>CtrlViewSlot.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1.png" />
+    <Content Include="Resources\2.png" />
+    <Content Include="Resources\3.png" />
+    <Content Include="Resources\4.png" />
+    <Content Include="Resources\5.png" />
+    <Content Include="Resources\6.png" />
+    <Content Include="Resources\7.png" />
+    <Content Include="Resources\8.png" />
+    <Content Include="Resources\AlignCenter.ico" />
+    <Content Include="Resources\AlignJustify.ico" />
+    <Content Include="Resources\AlignLeft.ico" />
+    <Content Include="Resources\AlignRight.ico" />
+    <Content Include="Resources\ArrowDown.ico" />
+    <Content Include="Resources\Bold.ico" />
+    <Content Include="Resources\Cancel.ico" />
+    <Content Include="Resources\Clear.ico" />
+    <Content Include="Resources\Collapce_Normal.ico" />
+    <Content Include="Resources\Collapce_Pushed.ico" />
+    <Content Include="Resources\Collapce_Raised.ico" />
+    <Content Include="Resources\Copy.ico" />
+    <Content Include="Resources\Create.ico" />
+    <Content Include="Resources\Cut.ico" />
+    <Content Include="Resources\Delete.ico" />
+    <Content Include="Resources\Delete_big.ico" />
+    <Content Include="Resources\Down.ico" />
+    <Content Include="Resources\Down_Hover.ico" />
+    <Content Include="Resources\Down_Pushed.ico" />
+    <Content Include="Resources\DropDownArrow.ico" />
+    <Content Include="Resources\Edit.ico" />
+    <None Include="Resources\Edit4.ico" />
+    <Content Include="Resources\Expand_Normal.ico" />
+    <Content Include="Resources\Expand_Pushed.ico" />
+    <Content Include="Resources\Expand_Raised.ico" />
+    <Content Include="Resources\FilterDelete.ico" />
+    <Content Include="Resources\FontDecr.ico" />
+    <Content Include="Resources\FontInc.ico" />
+    <Content Include="Resources\H1.ico" />
+    <Content Include="Resources\H2.ico" />
+    <Content Include="Resources\H3.ico" />
+    <Content Include="Resources\Indent.ico" />
+    <Content Include="Resources\Info.ico" />
+    <Content Include="Resources\Italic.ico" />
+    <Content Include="Resources\LayoutTable.ico" />
+    <Content Include="Resources\Left.ico" />
+    <Content Include="Resources\Left_Hover.ico" />
+    <Content Include="Resources\Left_Pushed.ico" />
+    <Content Include="Resources\List_Bullets.ico" />
+    <Content Include="Resources\List_Numbered.ico" />
+    <Content Include="Resources\NormalXbtn2_c.ico" />
+    <Content Include="Resources\OK.ico" />
+    <Content Include="Resources\Open.ico" />
+    <Content Include="Resources\Outdent.ico" />
+    <Content Include="Resources\Paste.ico" />
+    <Content Include="Resources\Point.ico" />
+    <Content Include="Resources\Point_2.ico" />
+    <Content Include="Resources\Point_2x7.ico" />
+    <Content Include="Resources\Point_Shadow.ico" />
+    <Content Include="Resources\Point_x6.ico" />
+    <Content Include="Resources\PropertiesFilter.ico" />
+    <Content Include="Resources\Property.ico" />
+    <Content Include="Resources\PropertyAdd.ico" />
+    <Content Include="Resources\Redo.ico" />
+    <Content Include="Resources\Refresh.ico" />
+    <Content Include="Resources\Refresh_1.ico" />
+    <Content Include="Resources\Rename.ico" />
+    <Content Include="Resources\Resource_Add.ico" />
+    <Content Include="Resources\Right.ico" />
+    <Content Include="Resources\Right_Hover.ico" />
+    <Content Include="Resources\Right_Pushed.ico" />
+    <Content Include="Resources\StopIcon.ico" />
+    <Content Include="Resources\TableAdd.ico" />
+    <Content Include="Resources\TableAddColumn.ico" />
+    <Content Include="Resources\TableAddRow.ico" />
+    <Content Include="Resources\TableDelColumn.ico" />
+    <Content Include="Resources\TableDelRow.ico" />
+    <Content Include="Resources\TableMergeCells.ico" />
+    <Content Include="Resources\TableMergeCellsDown.ico" />
+    <Content Include="Resources\TableMergeCellsRight.ico" />
+    <Content Include="Resources\TableSplitCells.ico" />
+    <Content Include="Resources\Text.png" />
+    <Content Include="Resources\Underline.ico" />
+    <Content Include="Resources\Undo.ico" />
+    <Content Include="Resources\Up.ico" />
+    <Content Include="Resources\Up_Hover.ico" />
+    <Content Include="Resources\Up_Pushed.ico" />
+    <Content Include="Resources\Xbutton_Normal.ico" />
+    <Content Include="Resources\Xbutton_Pushed.ico" />
+    <Content Include="Resources\Xbutton_Raised.ico" />
+    <Content Include="Resources\Zoom.ico" />
+    <Content Include="Resources\Zoom_Over.ico" />
+    <Content Include="Resources\Zoom_small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImportExport\CtrlClipboardImport.resx">
+      <DependentUpon>CtrlClipboardImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SimCaption.resx">
+      <DependentUpon>SimCaption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SimGroupBox.resx">
+      <DependentUpon>SimGroupBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SimProgress.resx">
+      <DependentUpon>SimProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CtrlViewDocLinesList.resx">
+      <DependentUpon>CtrlViewDocLinesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CtrlViewSlot.resx">
+      <DependentUpon>CtrlViewSlot.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

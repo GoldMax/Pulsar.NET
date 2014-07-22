@@ -1,0 +1,18 @@
+﻿<Autostart>
+	<Object>
+		<OID>303B63E6-E15E-4D3C-9353-0AA5A160BA9F</OID>
+		<GlobalName>Security</GlobalName>
+		<ObjectClassName>Pulsar.Security.PulsarSecurity, Pulsar.Server</ObjectClassName>
+		<ServantClassName>Pulsar.Server.Servant, Pulsar.Server</ServantClassName>
+	</Object>
+	<Object>
+		<GlobalName>MainMenu</GlobalName>
+		<ObjectClassName>Pulsar.Clients.PulsarMainMenu, Pulsar.Clients</ObjectClassName>
+		<ServantClassName>Pulsar.Server.Servant, Pulsar.Server</ServantClassName>
+	</Object>
+	<Object>
+		<GlobalName>Persons</GlobalName>
+		<ObjectClassName>Pulsar.Clients.Persons, Pulsar.Clients</ObjectClassName>
+		<ServantClassName>Pulsar.Server.Servant, Pulsar.Server</ServantClassName>
+	</Object>
+</Autostart>

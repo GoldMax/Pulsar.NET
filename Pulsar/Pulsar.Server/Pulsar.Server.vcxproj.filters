@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_ProjectData">
+      <UniqueIdentifier>{9307c77e-af36-45ce-b4b8-4118048456ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageBus">
+      <UniqueIdentifier>{77778d38-09ca-4bce-a79d-25f68d13ebdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security">
+      <UniqueIdentifier>{8e08b751-469d-4522-b292-9e0ca9df516f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Servant">
+      <UniqueIdentifier>{a08bb8e0-f856-4106-949c-880cb67fb1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{5b657473-442e-4c51-92f3-63848653c85e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stdafx.h">
+      <Filter>_ProjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Servant.h">
+      <Filter>Servant</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerMessageBus.h">
+      <Filter>MessageBus</Filter>
+    </ClInclude>
+    <ClInclude Include="AccessToken.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="ACE.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="SecurityGroup.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="PulsarSecurity.h">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Action2Invoker.h">
+      <Filter>MessageBus</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBusRecipient.h">
+      <Filter>MessageBus</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerParams.h" />
+    <ClInclude Include="GlobalObjectsManager.h" />
+    <ClInclude Include="PulsarCore.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="SchedulerServant.h" />
+    <ClInclude Include="ThreadContext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Stdafx.cpp">
+      <Filter>_ProjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>_ProjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Servant.cpp">
+      <Filter>Servant</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerMessageBus.cpp">
+      <Filter>MessageBus</Filter>
+    </ClCompile>
+    <ClCompile Include="PulsarCore.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

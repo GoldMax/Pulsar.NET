@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F7E6907-F4B6-4C72-AA27-A36B2DED3A5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sim.Controls</RootNamespace>
+    <AssemblyName>Sim.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Pulsar.Atoms">
+      <HintPath>..\..\Pulsar\Debug\Pulsar.Atoms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APIWrappers.cs" />
+    <Compile Include="Basis\Buttons\SimButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\Buttons\SimButtonBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\Buttons\SimDropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\Buttons\SimPopupButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\DataEditors\SimPropertyEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\Layout\SimLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\DataEditors\SimLabelEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupControls\SimDateSelect.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupControls\SimDateSelect.Designer.cs">
+      <DependentUpon>SimDateSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basis\SimDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimGraphControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Basis\SimGraphControl.designer.cs">
+      <DependentUpon>SimGraphControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basis\SimLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\Layout\SimLayoutTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\Layout\SimPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimTwoLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimToolStrip\SimToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Basis\SimTreeBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Basis\SimTreeBar.designer.cs">
+      <DependentUpon>SimTreeBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBoxItem_T.cs" />
+    <Compile Include="ControlExtension.cs" />
+    <Compile Include="Effects\BitmapEffects.cs" />
+    <Compile Include="Effects\ColorEffects.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="ErrorBoxes\ErrorBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorBoxes\ModalErrorBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ErrorBoxes\ModalErrorBox.Designer.cs">
+      <DependentUpon>ModalErrorBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalControls\SimModalControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModalControls\SimModalControl.Designer.cs">
+      <DependentUpon>SimModalControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalControls\SimModalDialogBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModalControls\SimModalDialogBase.Designer.cs">
+      <DependentUpon>SimModalDialogBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalControls\SimModalDualInputBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModalControls\SimModalDualInputBox.Designer.cs">
+      <DependentUpon>SimModalDualInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalControls\SimModalExecLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModalControls\SimModalExecLog.Designer.cs">
+      <DependentUpon>SimModalExecLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalControls\SimModalInputBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModalControls\SimModalInputBox.Designer.cs">
+      <DependentUpon>SimModalInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalControls\SimModalMessageBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModalControls\SimModalMessageBox.Designer.cs">
+      <DependentUpon>SimModalMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalControls\SimModalMultiChoiceBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModalControls\SimModalMultiChoiceBox.designer.cs">
+      <DependentUpon>SimModalMultiChoiceBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalControls\SimModalMultiChoiceBoxDual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModalControls\SimModalMultiChoiceBoxDual.designer.cs">
+      <DependentUpon>SimModalMultiChoiceBoxDual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalControls\SimModalTreeItemChoiceBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModalControls\SimModalTreeItemChoiceBox.Designer.cs">
+      <DependentUpon>SimModalTreeItemChoiceBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalControls\SimWizardBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ModalControls\SimWizardBase.Designer.cs">
+      <DependentUpon>SimWizardBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupControls\SimCheckList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupControls\SimPopupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupControls\SimQuickEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupControls\SimSelectList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupControls\SimPopupTreeChoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimTreeViewEx\SimTreeNodeEx.cs" />
+    <Compile Include="SimTreeViewEx\SimTreeNodeExCollection.cs" />
+    <Compile Include="SimTreeViewEx\SimTreeViewEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimTreeViewEx\SimTreeViewEx.Designer.cs">
+      <DependentUpon>SimTreeViewEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimTreeView\SimTreeNode.cs" />
+    <Compile Include="SimTreeView\SimTreeNodeCollection.cs" />
+    <Compile Include="SimTreeView\SimTreeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimTreeView\SimTreeView.Designer.cs">
+      <DependentUpon>SimTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimTreeGridView\SimTreeGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimTreeGridView\SimTreeGridViewMainColumn.cs" />
+    <Compile Include="SimDataGridView\DataGridViewExtensions.cs" />
+    <Compile Include="SimDataGridView\DetailColumnViewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimDataGridView\DetailColumnViewControl.Designer.cs">
+      <DependentUpon>DetailColumnViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimDataGridView\SimDataGridViewUnboundColumn.cs" />
+    <Compile Include="SimDataGridView\SimDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimDataGridView\SimDataGridViewEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SimDataGridView\SimDataGridViewEx.Designer.cs">
+      <DependentUpon>SimDataGridViewEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimDataGridView\SimDataGridViewFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimDataGridView\SimDataGridViewFindForm.Designer.cs">
+      <DependentUpon>SimDataGridViewFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimDataGridView\SimDataGridViewLabelColumn.cs" />
+    <Compile Include="SimControlsGrid\SimControlsGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SimToolStrip\SimToolStripCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimToolStrip\SimToolStripDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimToolStrip\SimToolStripComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimToolStrip\SimToolStripNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimToolStrip\SimToolStripTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PopupControls\SimDateSelect.resx">
+      <DependentUpon>SimDateSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\SimGraphControl.resx">
+      <DependentUpon>SimGraphControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\SimLabel.resx">
+      <DependentUpon>SimLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\SimListBox.resx">
+      <DependentUpon>SimListBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\Layout\SimPanel.resx">
+      <DependentUpon>SimPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\SimTreeBar.resx">
+      <DependentUpon>SimTreeBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorBoxes\ErrorBox.resx">
+      <DependentUpon>ErrorBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorBoxes\ModalErrorBox.resx">
+      <DependentUpon>ModalErrorBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalControls\SimModalControl.resx">
+      <DependentUpon>SimModalControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalControls\SimModalDialogBase.resx">
+      <DependentUpon>SimModalDialogBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalControls\SimModalDualInputBox.resx">
+      <DependentUpon>SimModalDualInputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalControls\SimModalExecLog.resx">
+      <DependentUpon>SimModalExecLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalControls\SimModalInputBox.resx">
+      <DependentUpon>SimModalInputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalControls\SimModalMessageBox.resx">
+      <DependentUpon>SimModalMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalControls\SimModalMultiChoiceBox.resx">
+      <DependentUpon>SimModalMultiChoiceBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalControls\SimModalMultiChoiceBoxDual.resx">
+      <DependentUpon>SimModalMultiChoiceBoxDual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalControls\SimModalTreeItemChoiceBox.resx">
+      <DependentUpon>SimModalTreeItemChoiceBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalControls\SimWizardBase.resx">
+      <DependentUpon>SimWizardBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupControls\SimPopupControl.resx">
+      <DependentUpon>SimPopupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimTreeViewEx\SimTreeViewEx.resx">
+      <DependentUpon>SimTreeViewEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimTreeView\SimTreeView.resx">
+      <DependentUpon>SimTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimTreeGridView\SimTreeGridView.resx">
+      <DependentUpon>SimTreeGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimDataGridView\DetailColumnViewControl.resx">
+      <DependentUpon>DetailColumnViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimDataGridView\SimDataGridView.resx">
+      <DependentUpon>SimDataGridView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimDataGridView\SimDataGridViewEx.resx">
+      <DependentUpon>SimDataGridViewEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimDataGridView\SimDataGridViewFindForm.resx">
+      <DependentUpon>SimDataGridViewFindForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimControlsGrid\SimControlsGrid.resx">
+      <DependentUpon>SimControlsGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\ArrowDown.ico" />
+    <Content Include="Resources\ArrowRight.ico" />
+    <Content Include="Resources\Cancel.ico" />
+    <Content Include="Resources\CheckBox_o.ico" />
+    <Content Include="Resources\CheckBox_Oo.ico" />
+    <Content Include="Resources\CheckBox_Ov.ico" />
+    <Content Include="Resources\CheckBox_v.ico" />
+    <Content Include="Resources\Circle.gif" />
+    <Content Include="Resources\Clock_Gray.ico" />
+    <Content Include="Resources\Clock_Green.ico" />
+    <Content Include="Resources\Clock_mini.ico" />
+    <Content Include="Resources\Clock_Mini1.ico" />
+    <Content Include="Resources\Clock_Red.ico" />
+    <Content Include="Resources\Clock_Yellow.ico" />
+    <Content Include="Resources\ColumnDetail.ico" />
+    <Content Include="Resources\ColumnFromDetail.ico" />
+    <Content Include="Resources\ColumnToDetail.ico" />
+    <Content Include="Resources\CompServerExchange.gif" />
+    <Content Include="Resources\Copy.ico" />
+    <Content Include="Resources\CSV.ico" />
+    <Content Include="Resources\DataBase.ico" />
+    <Content Include="Resources\Delete_big.ico" />
+    <Content Include="Resources\Down.ico" />
+    <Content Include="Resources\DropDownArrow.ico" />
+    <None Include="Resources\Edit4.ico" />
+    <Content Include="Resources\Error48.ico" />
+    <Content Include="Resources\ErrorServer.ico" />
+    <Content Include="Resources\ExportToFile.ico" />
+    <Content Include="Resources\f1.png" />
+    <Content Include="Resources\f10.png" />
+    <Content Include="Resources\f11.png" />
+    <Content Include="Resources\f12.png" />
+    <Content Include="Resources\f13.png" />
+    <Content Include="Resources\f14.png" />
+    <Content Include="Resources\f15.png" />
+    <Content Include="Resources\f16.png" />
+    <Content Include="Resources\f2.png" />
+    <Content Include="Resources\f3.png" />
+    <Content Include="Resources\f4.png" />
+    <Content Include="Resources\f5.png" />
+    <Content Include="Resources\f6.png" />
+    <Content Include="Resources\f7.png" />
+    <Content Include="Resources\f8.png" />
+    <Content Include="Resources\f9.png" />
+    <Content Include="Resources\Filter.ico" />
+    <Content Include="Resources\FilterDelete.ico" />
+    <Content Include="Resources\Filtered.ico" />
+    <Content Include="Resources\Find.ico" />
+    <Content Include="Resources\Flush.ico" />
+    <Content Include="Resources\FolderClosed.ico" />
+    <Content Include="Resources\FolderOpen.ico" />
+    <Content Include="Resources\Grid.ico" />
+    <Content Include="Resources\Info.ico" />
+    <Content Include="Resources\Info48.ico" />
+    <Content Include="Resources\MsgInfo.ico" />
+    <Content Include="Resources\NormalXbtn2.ico" />
+    <Content Include="Resources\NormalXbtn2_c.ico" />
+    <Content Include="Resources\OK.ico" />
+    <Content Include="Resources\Point_2.ico" />
+    <Content Include="Resources\Point_2x7.ico" />
+    <Content Include="Resources\ProdManager_Small.ico" />
+    <Content Include="Resources\PropertiesFilter.ico" />
+    <Content Include="Resources\PropertyAdd.ico" />
+    <Content Include="Resources\PushedXbtn2.ico" />
+    <Content Include="Resources\Question48.ico" />
+    <Content Include="Resources\RaisedXbtn2.ico" />
+    <Content Include="Resources\Refresh.ico" />
+    <Content Include="Resources\Rename.ico" />
+    <Content Include="Resources\ShowPoint.ico" />
+    <Content Include="Resources\Stop.ico" />
+    <Content Include="Resources\StopIcon.ico" />
+    <Content Include="Resources\TreeBtn_Minus.ico" />
+    <Content Include="Resources\TreeBtn_Plus.ico" />
+    <Content Include="Resources\TreeView.ico" />
+    <Content Include="Resources\TreeView1.ico" />
+    <Content Include="Resources\TreeView3.ico" />
+    <Content Include="Resources\TreeViewCount.ico" />
+    <Content Include="Resources\Up.ico" />
+    <Content Include="Resources\Warning48.ico" />
+    <Content Include="Resources\X.ico" />
+    <Content Include="Resources\XLS.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel.xls" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
